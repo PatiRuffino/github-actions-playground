@@ -22,10 +22,13 @@ jobs:
       
       - name: Build and Test
         run: mvn test
+        
       - name: Upload JaCoCo coverage report as a workflow artifact
         timeout-minutes: 2
         uses: actions/upload-artifact@v3
-        path: target/site/jacoco/
+        with:
+         name: jacoco-report
+         path: target/site/jacoco/
         
 
 
