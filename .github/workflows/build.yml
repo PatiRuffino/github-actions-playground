@@ -23,9 +23,9 @@ jobs:
       - name: Build and Test
         run: |
           mvn -N io.takari:maven:wrapper
-          chmod +x mvnw
-          mvnw clean install
-          mvnw test
+          chmod +x ./mvnw
+          ./mvnw clean install
+          ./mvnw test
         env:
           MAVEN_OPTS: -Dmaven.test.failure.ignore=true
 
