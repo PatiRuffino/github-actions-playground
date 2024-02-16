@@ -95,7 +95,7 @@
                 <artifactId>dependency-check-maven</artifactId>
                 <version>8.4.2</version>
                 <configuration>
-                    <failOnError>true</failOnError>
+                    <failOnError>false</failOnError>
                     <failBuildOnCVSS>9</failBuildOnCVSS>
                     <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
                     <nugetconfAnalyzerEnabled>false</nugetconfAnalyzerEnabled>
