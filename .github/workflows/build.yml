@@ -40,7 +40,7 @@ jobs:
         uses: actions/setup-java@v3
         with:
           java-version: 21
-          distribution: 'temerin'
+          distribution: 'temurin'
           cache: maven
       - name: Run mutation testing
         run: mvn teste-compile org.pitest-maven:mutationCoverage
