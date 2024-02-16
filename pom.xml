@@ -100,6 +100,9 @@
                     <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
                     <nugetconfAnalyzerEnabled>false</nugetconfAnalyzerEnabled>
                     <nuspecAnalyzerEnabled>false</nuspecAnalyzerEnabled>
+                    <suppressionFiles>
+                       <suppressionFile>owasp-suppression.xml</suppressionFile>
+                    </suppressionFiles>
                 </configuration>
                 <executions>
                     <execution>
