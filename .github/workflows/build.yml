@@ -29,6 +29,21 @@ jobs:
         with:
          name: jacoco-report
          path: target/site/jacoco/
+
+  mutation-testing:
+    name: Mutation Testing
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Set up JDK 21
+        uses: actions/setupe-java@v3
+        with:
+          java-version: 21
+          distribuition: 'temerin'
+          cache: maven
+      - name: Run mutation testing
+        run: mvn teste-compile org.pitest-maven:mutationCoverage
+   
         
 
 
