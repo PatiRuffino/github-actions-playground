@@ -91,9 +91,16 @@
                 </executions>
             </plugin>
             <plugin>
-                <groupId>com.googlecode.owasp-java-html-sanitizer</groupId>
-    <artifactId>owasp-java-html-sanitizer</artifactId>
-    <version>20220608.1</version>
+                <groupId>org.owasp</groupId>
+                <artifactId>dependency-check-maven</artifactId>
+                <version>8.4.2</version>
+                <configuration>
+                    <failOnError>true</failOnError>
+                    <failBuildOnCVSS>9</failBuildOnCVSS>
+                    <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+                    <nugetconfAnalyzerEnabled>false</nugetconfAnalyzerEnabled>
+                    <nuspecAnalyzerEnabled>false</nuspecAnalyzerEnabled>
+                </configuration>
                 <executions>
                     <execution>
                         <goals>
