@@ -85,7 +85,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: guhtiagosilva/github-actions-playground:latest     
+          tags: PatiRuffino/github-actions-playground:latest     
    
         
 
