@@ -96,7 +96,7 @@
                 <version>8.4.2</version>
                 <configuration>
                     <failOnError>false</failOnError>
-                    <failBuildOnCVSS>9</failBuildOnCVSS>
+                    <failBuildOnCVSS>2</failBuildOnCVSS>
                     <assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
                     <nugetconfAnalyzerEnabled>false</nugetconfAnalyzerEnabled>
                     <nuspecAnalyzerEnabled>false</nuspecAnalyzerEnabled>
